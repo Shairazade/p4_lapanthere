@@ -80,20 +80,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
-.texture-paper::before {
-    background: url("img-webp/texture-paper.webp");
-    background-size: 280px 280px;
-}
 
 .b-parallax {
     background-attachment: fixed;
@@ -133,7 +120,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: white;
 }
 
 .d-bloc .a-btn:hover,
@@ -270,8 +257,13 @@ a:hover {
 
 .voffset-lg {
     margin-top: 80px;
+   
 }
 
+.lol {
+    font-size: 16px;
+    color: #ad5932;
+}
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -647,11 +639,14 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn{
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+a {
+    color: #FFFFFF;
 }
 
 .container {
@@ -677,8 +672,9 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
+
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -736,7 +732,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #676262!important;
 }
 
 .portfolio-thumb {
@@ -753,7 +749,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: white;
     padding: 40px 40px 40px 40px;
 }
 
@@ -766,16 +762,18 @@ h4 {
     background-color: #FFFFFF;
 }
 
+
+
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #ad5932;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ad5932!important;
 }
 
 .btn-atomic-tangerine {
@@ -789,7 +787,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #676262!important;
 }
 
 .ltc-white:hover {
@@ -805,7 +803,7 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
+    color: #ad5932!important;
     border-color: #364577!important;
 }
 
@@ -819,10 +817,21 @@ h4 {
 
 .bg-banniere {
     background-image: url("img-webp/agence-la-panthere.webp");
+    
 }
+h1 {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
 
 .bg-presentation {
     background-image: url("img-webp/image-de-presentation.webp");
+    
+}
+
+.bg-presentation img {
+    opacity: 0;
 }
 
 @media (max-width: 1024px) {
@@ -923,6 +932,8 @@ h4 {
         -webkit-transform: none;
         -ms-transform: none;
     }
+
+
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
